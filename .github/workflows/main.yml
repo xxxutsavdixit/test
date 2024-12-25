@@ -26,4 +26,8 @@ jobs:
                         dist
                         index.html
                         package.json
+          - name: pwd
+            run: |
+                ls -la
+                pwd
          
