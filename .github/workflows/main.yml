@@ -30,4 +30,15 @@ jobs:
             run: |
                 ls -la
                 pwd
-         
+
+    second:
+      needs: first
+      runs-on: ubuntu-latest
+      steps:
+       - name: checkout the brach to the locatuion 
+         uses: actions/checkout@v3
+       
+       - name: copying the artifact to this location 
+         uses: actions/download-artifact@v3
+         with:
+             name: DTM-APP
