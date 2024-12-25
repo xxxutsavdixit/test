@@ -1,0 +1,16 @@
+name: This is a practice for artifacr
+on: workflow_dispatch
+jobs:
+    first:
+      runs-on: ubuntu-latest
+      steps:
+          - name: checkout the branch
+            uses: actions/checkout@v3
+          - name: install nodeJS
+            uses: actions/node@v3
+            with:
+                node-version: "16.18.0"
+          - name: Install dependency
+            run: npm install
+          - name: Build package
+            run: npm run build
