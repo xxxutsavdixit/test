@@ -24,5 +24,6 @@ jobs:
                   name: DTM_APP
                   path: |
                         dist
-            
+                        index.html
+                        package.json
          
