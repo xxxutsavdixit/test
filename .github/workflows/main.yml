@@ -23,6 +23,6 @@ jobs:
             with:
                   name: DTM_APP
                   path: |
-                       - dist/
+                        dist
             
          
