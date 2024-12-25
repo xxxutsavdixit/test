@@ -42,3 +42,7 @@ jobs:
          uses: actions/download-artifact@v3
          with:
              name: DTM_APP
+       - name: Get the pwd and ls
+         run: |
+             ls
+             pwd
