@@ -1,9 +1,17 @@
 name: This is a practice for artifacr
 on: workflow_dispatch
+env:
+    TEST: abc
+    BHEEM: mc
 jobs:
     first:
       runs-on: ubuntu-latest
       steps:
+          - name: Print teh envt varibale
+            run: echo "This is alphabet $TEST"
+
+          - name: Print the envt variable
+            echo: "This is the value of ${{ent.BHEEM}}"
           - name: checkout the branch
             uses: actions/checkout@v3
           - name: install nodeJS
