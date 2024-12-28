@@ -8,7 +8,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
           - name: Print teh envt varibale
-            run: echo "This is alphabet $TEST"
+            run: echo "This is alphabet ${{evn.TEST}}"
           - name: Print the envt variable
             run: echo "This is the value of ${{env.BHEEM}}"
           - name: checkout the branch
