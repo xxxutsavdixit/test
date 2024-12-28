@@ -1,8 +1,8 @@
 name: This is a practice for artifacr
 on: workflow_dispatch
 env:
-    TEST: abc
-    BHEEM: mc
+    TEST: "${{secrets.TEST}}"
+    BHEEM: "${{secrets.BHEEM}}"
 jobs:
     first:
       runs-on: ubuntu-latest
