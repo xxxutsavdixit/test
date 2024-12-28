@@ -9,9 +9,8 @@ jobs:
       steps:
           - name: Print teh envt varibale
             run: echo "This is alphabet $TEST"
-
           - name: Print the envt variable
-            run: echo "This is the value of ${{ent.BHEEM}}"
+            run: echo "This is the value of ${{env.BHEEM}}"
           - name: checkout the branch
             uses: actions/checkout@v3
           - name: install nodeJS
